@@ -68,7 +68,7 @@ const Services = () => {
   return (
     <div className="py-12 bg-base-100">
       {/*  Services List Section */}
-      <section className="max-w-6xl mx-auto px-4 text-center">
+      <section className=" mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-[#2C1B0E] mb-10" data-aos="fade-up">
           Our Pet Care Services
         </h2>
@@ -100,7 +100,7 @@ const Services = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="max-w-6xl mx-auto px-4 text-center mt-20">
+      <section className="max-w-7xl mx-auto px-4 text-center mt-20">
         <h2 className="text-3xl font-bold text-[#2C1B0E] mb-8" data-aos="fade-up">
           Why Choose Us
         </h2>
@@ -136,7 +136,7 @@ const Services = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="max-w-6xl mx-auto px-4 text-center mt-20">
+      <section className="max-w-7xl mx-auto px-4 text-center mt-20">
         <h2 className="text-3xl font-bold text-[#2C1B0E] mb-8" data-aos="fade-up">
            What Our Clients Say
         </h2>

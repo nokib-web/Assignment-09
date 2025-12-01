@@ -1,15 +1,22 @@
-import React, { use } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router';
 import logo from '../../assets/logo.png'
 import { AuthContext } from '../../provider/AuthContext';
-import userLogo from '../../assets/user.png'
+
 import toast, { Toaster } from 'react-hot-toast';
+import { FaUser } from 'react-icons/fa';
 
 
 
 const Navbar = () => {
     const { user, logout } = use(AuthContext)
-    console.log(user)
+     const [theme, setTheme] = useState(localStorage.getItem('theme') || "light")
+   
+        useEffect(() => {
+        const html = document.querySelector('html')
+        html.setAttribute("data-theme", theme)
+        localStorage.setItem("theme", theme)
+    }, [theme])
 
     const handleLogout = () => {
         logout()
@@ -19,16 +26,24 @@ const Navbar = () => {
                 console.log(error)
             });
     }
+     const handleTheme = (checked) => {
+        setTheme(checked ? "dark" : "light")
+    }
 
 
 
     const links = <>
         <NavLink className='text-semibold text-gray-600 ml-4' to='/'><li>  Home</li></NavLink>
         <NavLink className='text-semibold text-gray-600 ml-4' to='/services'><li>Services</li></NavLink>
-        <NavLink className='text-semibold text-gray-600 ml-4' to='/profile'><li>My Profile</li></NavLink>
+        {
+            user && <NavLink className='text-semibold text-gray-600 ml-4' to='/profile'><li>My Profile</li></NavLink>
+        }
+        
     </>
+
     return (
-        <div className="  navbar bg-base-200 shadow-sm">
+       <div className='bg-base-200 navbar sticky top-0 z-50  shadow-sm'>
+         <div className=" max-w-7xl mx-auto navbar ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,24 +65,65 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
 
+                 {user ? (
+                        <div className="dropdown dropdown-end z-50">
+                            <div
+                                tabIndex={0}
+                                role="button"
+                                className=" rounded-full avatar"
+                            >
+                                <div className="w-10  rounded-full">
+                                    <img
+                                        alt="Tailwind CSS Navbar component"
+                                        referrerPolicy="no-referrer"
+                                        src={user.photoURL || 'https://i.ibb.co/MBtjqXQ/no-avatar.gif'}
+                                    />
+                                </div>
+                            </div>
+                            <ul
+                                tabIndex="-1"
+                                className="menu  menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow"
+                            >
+                                <div className=" pb-3 border-b border-b-gray-200">
+                                    <li className="text-sm font-bold">{user.displayName}</li>
+                                    <li className="text-xs">{user.email}</li>
+                                </div>
+                                <li className="mt-3">
+                                    <Link to={"/profile"}>
+                                        <FaUser /> Profile
+                                    </Link>
+                                </li>
 
-                <div className='relative group cursor-pointer'>
-                    <Link to={'/profile'}><img className="w-12 lg:mr-4 mr-1 rounded-full h-10" src={`${user ? user.photoURL : userLogo}`} alt="" /></Link>
-                    <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
-                        {user?.displayName || 'User'}
-                    </span>
-                </div>
+                                  <div className='flex items-center gap-2 '>
 
+                                    <h1 className='mt-4'>Theme:</h1>
 
+                                    <input
+                                        onChange={(e) => handleTheme(e.target.checked)}
+                                        type="checkbox"
+                                        defaultChecked={localStorage.getItem('theme') === "dark"}
+                                        className="toggle mt-4" />
+                                </div>
 
+                                
 
-
-                {
-                    user ? (<button onClick={handleLogout} className="btn text-white rounded-xl hover:bg-[#5e3810] w-[70px] bg-[#c78947]  ">LogOut</button>) : (<Link to={'/login'}>  <button className="btn bg-[#c78947] text-white rounded-xl hover:bg-[#5e3810] w-[70px]   ">Login</button></Link>)
-                }
+                                <li>
+                                    <button
+                                        onClick={handleLogout}
+                                        className="btn btn-sm m-4 btn-primary text-white"
+                                    >
+                                        Logout
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    ) : (
+                        <Link to={'/login'}><li className="btn btn-primary  ">Login</li></Link>
+                    )}
             </div>
             <Toaster></Toaster>
         </div >
+       </div>
     );
 };
 

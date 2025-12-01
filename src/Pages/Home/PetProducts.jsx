@@ -40,7 +40,7 @@ const PetProducts = () => {
 
   return (
     <section className="py-12 bg-base-100">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+      <div className="max-w-7xl mx-auto px-4 text-center">
         <h2
           className="text-3xl font-bold text-[#2C1B0E] mb-8"
           data-aos="fade-up"
@@ -66,7 +66,7 @@ const PetProducts = () => {
               />
               <div className="p-5 text-left">
                 <h3 className="text-xl font-semibold">{product.name}</h3>
-                <p className="text-gray-500 text-sm mt-1">{product.description}</p>
+                <p className="text-gray-500 min-h-12  text-sm mt-1">{product.description}</p>
                 <div className="flex items-center justify-between mt-4">
                   <p className="text-primary font-bold">{product.price}</p>
                   <div className="flex items-center text-yellow-500">

@@ -29,13 +29,13 @@ const WinterCareTips = () => {
   ];
 
   return (
-    <section className="py-12 w-11/12 mx-auto rounded-xl bg-blue-50">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+    <section className="py-12  mx-auto rounded-xl bg-blue-50">
+      <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
           Winter Care Tips for Pets
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
           {winterTips.map((tip) => (
             <div
               key={tip.id}

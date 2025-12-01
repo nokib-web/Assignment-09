@@ -6,10 +6,25 @@
     "providerEmail": "info@pawcare.com",
     "price": "$25",
     "rating": 4.9,
+    "reviewCount": 428,
     "slotsAvailable": 4,
+    "duration": "45 mins",
     "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "detailedDescription": "Expert stylists measure your dog on-site and help you choose from 50+ premium winter coats (fleece-lined, waterproof, reflective). Includes free minor adjustments and style consultation.",
     "image": "https://i.ibb.co.com/vChHzDTp/1.jpg",
-    "category": "Clothing"
+    "gallery": [
+      "https://i.ibb.co.com/vChHzDTp/1.jpg",
+      "https://i.ibb.co.com/3d5vY8k/cozy-shih-tzu.jpg",
+      "https://i.ibb.co.com/8xYvN2m/dachshund-coat.jpg"
+    ],
+    "category": "Clothing",
+    "subcategory": "Winter Apparel",
+    "location": "Downtown Studio • 5th Ave",
+    "featured": true,
+    "bestseller": true,
+    "tags": ["custom-fit", "waterproof", "fleece-lined", "small-breed-friendly", "reflective"],
+    "includes": ["Free size exchange", "Professional fitting", "Hot cocoa for owners"],
+    "availability": ["Mon–Sat", "10AM–7PM"]
   },
   {
     "serviceId": 2,
@@ -18,10 +33,24 @@
     "providerEmail": "hello@cozypets.com",
     "price": "$30",
     "rating": 4.8,
+    "reviewCount": 389,
     "slotsAvailable": 3,
+    "duration": "60–90 mins",
     "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "detailedDescription": "Full bath with oatmeal-hypoallergenic shampoo, deep paw pad moisturizing treatment, nail trim, ear cleaning, and anti-static blow-dry. Perfect for dry winter skin.",
     "image": "https://i.ibb.co.com/xqvcPkc2/2.webp",
-    "category": "Grooming"
+    "gallery": [
+      "https://i.ibb.co.com/xqvcPkc2/2.webp",
+      "https://i.ibb.co.com/7zLcP9m/paw-massage.jpg"
+    ],
+    "category": "Grooming",
+    "subcategory": "Seasonal Care",
+    "location": "Northside Salon • Maple Street",
+    "featured": true,
+    "bestseller": false,
+    "tags": ["hypoallergenic", "paw balm", "dry skin relief", "corgi-approved"],
+    "includes": ["Blueberry facial", "Paw balm takeaway", "Calming aromatherapy"],
+    "availability": ["Tue–Sun", "9AM–6PM"]
   },
   {
     "serviceId": 3,
@@ -30,10 +59,24 @@
     "providerEmail": "studio@furframe.com",
     "price": "$40",
     "rating": 4.7,
+    "reviewCount": 312,
     "slotsAvailable": 5,
+    "duration": "90 mins",
     "description": "Capture your pets in adorable winter outfits with a cozy themed photo session.",
+    "detailedDescription": "Professional photographer + unlimited outfit changes + holiday backdrops (fireplace, snow forest, cabin). Receive 15 edited high-res photos + 1 framed print.",
     "image": "https://i.ibb.co.com/Ld5k6kbw/hero3.jpg",
-    "category": "Photography"
+    "gallery": [
+      "https://i.ibb.co.com/Ld5k6kbw/hero3.jpg",
+      "https://i.ibb.co.com/9bY3kLm/chihuahua-snow.jpg"
+    ],
+    "category": "Photography",
+    "subcategory": "Holiday Sessions",
+    "location": "Indoor Studio + Outdoor Park",
+    "featured": true,
+    "bestseller": true,
+    "tags": ["holiday cards", "professional edits", "props included", "multiple pets ok"],
+    "includes": ["Costume wardrobe", "Digital gallery", "Print credit"],
+    "availability": ["Weekends Only", "Nov–Feb"]
   },
   {
     "serviceId": 4,
@@ -42,10 +85,19 @@
     "providerEmail": "train@activepaws.com",
     "price": "$35",
     "rating": 4.6,
+    "reviewCount": 267,
     "slotsAvailable": 6,
+    "duration": "50 mins",
     "description": "Teach your pets to stay calm and active during cold outdoor walks with expert trainers.",
+    "detailedDescription": "Certified trainers teach boot tolerance, cold-weather leash manners, recall in snow, and how to prevent ice ball buildup in fur.",
     "image": "https://i.ibb.co.com/1JT0TM66/4.webp",
-    "category": "Training"
+    "category": "Training",
+    "subcategory": "Seasonal Skills",
+    "location": "Central Snow Park",
+    "featured": false,
+    "bestseller": false,
+    "tags": ["group class", "boot training", "cold adaptation"],
+    "includes": ["Training treats", "Booties trial", "Progress report"]
   },
   {
     "serviceId": 5,
@@ -54,10 +106,18 @@
     "providerEmail": "service@warmnest.com",
     "price": "$15",
     "rating": 4.8,
+    "reviewCount": 541,
     "slotsAvailable": 8,
+    "duration": "7-Day Rental",
     "description": "Rent premium-quality heated blankets designed specifically for cats and dogs during winter.",
+    "detailedDescription": "Veterinarian-approved, low-voltage, chew-resistant heated beds with thermostat (3 levels). Free delivery & pickup in city.",
     "image": "https://i.ibb.co.com/gMDHV698/5.jpg",
-    "category": "Comfort"
+    "category": "Comfort",
+    "subcategory": "Home Essentials",
+    "location": "Citywide Delivery",
+    "featured": true,
+    "bestseller": true,
+    "tags": ["thermostat", "machine washable", "senior-friendly"]
   },
   {
     "serviceId": 6,
@@ -66,10 +126,18 @@
     "providerEmail": "support@petbite.com",
     "price": "$28",
     "rating": 4.9,
+    "reviewCount": 398,
     "slotsAvailable": 7,
+    "duration": "30-min consult + plan",
     "description": "Customized meal plans to boost your pet’s immunity and energy during the cold season.",
+    "detailedDescription": "Board-certified veterinary nutritionist creates a 30-day winter meal plan with recipes, supplements, and portion guide.",
     "image": "https://i.ibb.co.com/60szMN8w/6.jpg",
-    "category": "Nutrition"
+    "category": "Nutrition",
+    "subcategory": "Personalized Plans",
+    "location": "Virtual Consultation",
+    "featured": false,
+    "bestseller": true,
+    "tags": ["vet-approved", "immune boost", "weight management"]
   },
   {
     "serviceId": 7,
@@ -78,10 +146,18 @@
     "providerEmail": "care@chilltails.com",
     "price": "$45",
     "rating": 4.9,
+    "reviewCount": 476,
     "slotsAvailable": 4,
+    "duration": "75 mins",
     "description": "Relaxing spa and massage therapy to relieve winter stiffness and dryness for your pets.",
+    "detailedDescription": "Hydrotherapy warm bath + therapeutic massage + aromatherapy + blueberry facial + nail grind.",
     "image": "https://i.ibb.co.com/xKTv5cxX/7.jpg",
-    "category": "Spa"
+    "category": "Spa",
+    "subcategory": "Luxury Wellness",
+    "location": "Luxury Spa • Riverside",
+    "featured": true,
+    "bestseller": true,
+    "tags": ["hydrotherapy", "aromatherapy", "senior pets"]
   },
   {
     "serviceId": 8,
@@ -90,10 +166,18 @@
     "providerEmail": "stay@snowyhaven.com",
     "price": "$50",
     "rating": 4.7,
+    "reviewCount": 289,
     "slotsAvailable": 5,
+    "duration": "Per Night",
     "description": "Warm and secure pet boarding cabins equipped with heated beds and daily playtime.",
+    "detailedDescription": "Private heated cabin, webcam access, 3 daily walks, cuddle sessions, and bedtime story (yes, really).",
     "image": "https://i.ibb.co.com/XZZ6B550/8.jpg",
-    "category": "Boarding"
+    "category": "Boarding",
+    "subcategory": "Luxury Stay",
+    "location": "Mountain Retreat",
+    "featured": true,
+    "bestseller": false,
+    "tags": ["24/7 care", "webcam", "heated floors"]
   },
   {
     "serviceId": 9,
@@ -102,9 +186,17 @@
     "providerEmail": "contact@vetcare.com",
     "price": "$38",
     "rating": 4.8,
+    "reviewCount": 512,
     "slotsAvailable": 6,
+    "duration": "45 mins",
     "description": "Comprehensive winter wellness checkup including fur care, immunity test, and temperature control advice.",
+    "detailedDescription": "Full physical exam, blood panel, joint flexibility test, dental check, and personalized winter care plan from board-certified vet.",
     "image": "https://i.ibb.co.com/JW2M05Pz/9.jpg",
-    "category": "Health"
+    "category": "Health",
+    "subcategory": "Preventive Care",
+    "location": "VetCare Clinic • All branches",
+    "featured": true,
+    "bestseller": true,
+    "tags": ["bloodwork", "senior discount", "same-day results"]
   }
 ]

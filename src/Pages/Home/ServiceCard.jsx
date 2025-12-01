@@ -17,7 +17,9 @@ const ServiceCard = ({ service }) => {
             </figure>
 
             <div className="card-body text-left">
-                <h3 className="card-title">{serviceName}</h3>
+                <h3 className="card-title min-h-[3rem] leading-snug">
+                    {serviceName}
+                </h3>
 
                 <div className="flex items-center justify-between mt-2">
                     <div className="flex items-center gap-1">

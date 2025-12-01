@@ -5,9 +5,9 @@ import Footer from '../components/Footer/Footer';
 
 const Root = () => {
     return (
-        <div>
+        <div className=''>
             <Navbar></Navbar>
-            <div className='w-11/12 mx-auto lg:min-h-screen object-cover my-10'><Outlet></Outlet></div>
+            <div className='max-w-7xl mx-auto min-h-screen'><Outlet></Outlet></div>
             <Footer></Footer>
             
         </div>

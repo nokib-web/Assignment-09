@@ -31,13 +31,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/profile',
-                Component: Profile,
+                element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
             },
             {
                 path: '/details/:id',
-                element: <PrivateRoutes>
-                    <Details></Details>
-                </PrivateRoutes>,
+                Component: Details,
                 loader: () => fetch('/services.json'),
                 hydrateFallbackElement: <LoadingSpinner></LoadingSpinner>
             },
@@ -58,10 +56,10 @@ const router = createBrowserRouter([
                 element: <ErrorPage></ErrorPage>
             },
             {
-                path:'/forget-password',
+                path: '/forget-password',
                 Component: ForgetPassword,
             },
-      
+
         ]
     }
 ])
