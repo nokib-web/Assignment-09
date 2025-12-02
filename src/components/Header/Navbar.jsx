@@ -36,6 +36,7 @@ const Navbar = () => {
         <NavLink className='text-semibold text-gray-600 ml-4' to='/'><li>  Home</li></NavLink>
         <NavLink className='text-semibold text-gray-600 ml-4' to='/all-services'><li> All Services</li></NavLink>
         <NavLink className='text-semibold text-gray-600 ml-4' to='/about'><li>About Us</li></NavLink>
+        <NavLink className='text-semibold text-gray-600 ml-4' to='/support'><li>Support</li></NavLink>
         {
             user && <NavLink className='text-semibold text-gray-600 ml-4' to='/profile'><li>My Profile</li></NavLink>
         }
@@ -111,7 +112,7 @@ const Navbar = () => {
                                 <li>
                                     <button
                                         onClick={handleLogout}
-                                        className="btn btn-sm m-4 btn-primary text-white"
+                                        className="btn btn-sm m-4 bg-[#2C1B0E] text-white"
                                     >
                                         Logout
                                     </button>
@@ -119,7 +120,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                     ) : (
-                        <Link to={'/login'}><li className="btn btn-primary  ">Login</li></Link>
+                        <Link to={'/login'}><li className="btn bg-[#c78947] text-white  ">Login</li></Link>
                     )}
             </div>
             <Toaster></Toaster>

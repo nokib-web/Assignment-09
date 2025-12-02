@@ -12,6 +12,7 @@ import LoadingSpinner from "../Pages/Loading/LoadingSpinner";
 import ForgetPassword from "../Pages/Login/ForgetPassword";
 import AllServices from "../Pages/AllServices/AllServices";
 import About from "../Pages/About/About";
+import Support from "../Pages/Support/Support";
 
 
 
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
                 path:'/all-services',
                 Component: AllServices,
                 loader: () => fetch('/services.json'),
+            },
+            {
+                path:'/support',
+                Component: Support,
             }
 
         ]

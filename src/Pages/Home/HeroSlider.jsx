@@ -28,7 +28,7 @@ const slides = [
 
 const HeroSlider = () => {
   return (
-    <section className="  max-h-140  lg:h-[60vh] rounded-2xl overflow-hidden shadow-lg">
+    <section className=" my-10  max-h-140  lg:h-[60vh] rounded-2xl overflow-hidden shadow-lg">
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
