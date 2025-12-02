@@ -1,7 +1,7 @@
 # 🐾 Pet Care Website
 
 ## 🌐 Live URL
-[Visit the Live Site](https://warmpaws-c4688.web.app/)
+[Visit the Live Site](https://warm-paws-zeta.vercel.app/)
 
 ---
 
@@ -39,6 +39,6 @@ The site is designed using modern UI tools and provides a smooth, responsive use
 ---
 
 ## ⚙️ Installation & Setup
-1. [Clone the Repository](https://github.com/programming-hero-web-course2/b12-a9-firesheild-nokib-web)
+1. [Clone the Repository](https://github.com/nokib-web/WarmPaws)
 
   
