@@ -14,7 +14,7 @@ export default function SupportPage() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
       {/* Header */}
-      <section className="bg-white shadow-sm py-15 text-center">
+      <section className="bg-white text-[#2C1B0E] shadow-sm py-15 text-center">
         <h1 className="text-4xl font-bold mb-4">Support Center</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Your pets mean the world to us. We are here to help you with anything—anytime.
@@ -35,7 +35,7 @@ export default function SupportPage() {
 
         {/* Booking Support */}
         <div className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition">
-          <FaCalendarAlt className="w-10 h-10 text-blue-500 mb-4" />
+          <FaCalendarAlt className="w-10 h-10 text-[#c78947] mb-4" />
           <h2 className="text-xl font-semibold mb-2">Booking & Scheduling</h2>
           <p className="text-gray-600">
             Modify bookings, check availability, and manage drop-off/pick-up.
@@ -44,7 +44,7 @@ export default function SupportPage() {
 
         {/* Payments */}
         <div className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition">
-          <FaCreditCard className="w-10 h-10 text-green-600 mb-4" />
+          <FaCreditCard className="w-10 h-10 text-[#c78947] mb-4" />
           <h2 className="text-xl font-semibold mb-2">Account & Payments</h2>
           <p className="text-gray-600">
             Support for invoices, refunds, and account updates.
@@ -71,14 +71,14 @@ export default function SupportPage() {
       <section className="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
         {/* Live Chat */}
         <div className="bg-white rounded-2xl p-8 shadow hover:shadow-lg transition text-center">
-          <FaComments className="w-10 h-10 text-purple-600 mb-4 mx-auto" />
+          <FaComments className="w-10 h-10 text-[#c78947] mb-4 mx-auto" />
           <h3 className="text-xl font-semibold mb-2">Live Chat</h3>
           <p className="text-gray-600">Available 9:00 AM – 11:00 PM (BDT)</p>
         </div>
 
         {/* Phone */}
         <div className="bg-white rounded-2xl p-8 shadow hover:shadow-lg transition text-center">
-          <FaPhone className="w-10 h-10 text-blue-600 mb-4 mx-auto" />
+          <FaPhone className="w-10 h-10 text-[#c78947] mb-4 mx-auto" />
           <h3 className="text-xl font-semibold mb-2">Phone Support</h3>
           <p className="text-gray-600">+880 XXX XXX XXX</p>
           <p className="text-gray-600">24/7 Available</p>
@@ -86,7 +86,7 @@ export default function SupportPage() {
 
         {/* Email */}
         <div className="bg-white rounded-2xl p-8 shadow hover:shadow-lg transition text-center">
-          <FaEnvelope className="w-10 h-10 text-green-700 mb-4 mx-auto" />
+          <FaEnvelope className="w-10 h-10 text-[#c78947] mb-4 mx-auto" />
           <h3 className="text-xl font-semibold mb-2">Email Support</h3>
           <p className="text-gray-600">support@warmpaws.com</p>
           <p className="text-gray-600">Response within 12 hours</p>
@@ -111,7 +111,7 @@ export default function SupportPage() {
             </select>
             <textarea className="p-4 border rounded-xl" rows="5" placeholder="Describe your issue..."></textarea>
 
-            <button className="bg-blue-600 text-white py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
+            <button className="bg-[#c78947] text-white py-4 rounded-xl font-semibold hover:bg-[#c78947] transition">
               Submit Request
             </button>
           </form>
@@ -122,7 +122,7 @@ export default function SupportPage() {
       <section className="py-16 text-center">
         <h2 className="text-2xl font-bold mb-4">Still Need Help?</h2>
         <p className="text-gray-600 mb-6">Our team is always here for you.</p>
-        <a className="inline-block bg-green-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-700 transition" href="#">
+        <a className="inline-block bg-[#c78947] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#c78947] transition" href="#">
           Contact Support
         </a>
       </section>
@@ -133,7 +133,7 @@ export default function SupportPage() {
 function FAQ({ q, a }) {
   return (
     <div className="p-6 bg-gray-100 rounded-xl flex gap-4">
-      <FaQuestionCircle className="w-6 h-6 text-blue-500 mt-1" />
+      <FaQuestionCircle className="w-6 h-6 text-[#c78947] mt-1" />
       <div>
         <h4 className="text-lg font-semibold">{q}</h4>
         <p className="text-gray-600 mt-1">{a}</p>

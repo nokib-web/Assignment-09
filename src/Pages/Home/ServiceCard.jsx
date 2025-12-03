@@ -17,7 +17,7 @@ const ServiceCard = ({ service }) => {
             </figure>
 
             <div className="card-body text-left">
-                <h3 className="card-title min-h-[3rem] leading-snug">
+                <h3 className="card-title min-h-[6rem] leading-snug">
                     {serviceName}
                 </h3>
 

@@ -13,6 +13,7 @@ import ForgetPassword from "../Pages/Login/ForgetPassword";
 import AllServices from "../Pages/AllServices/AllServices";
 import About from "../Pages/About/About";
 import Support from "../Pages/Support/Support";
+import Adoption from "../Pages/Adoption/Adoption";
 
 
 
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
             {
                 path:'/support',
                 Component: Support,
+            },
+            {
+                path: '/adoption',
+                Component: Adoption,
             }
 
         ]
